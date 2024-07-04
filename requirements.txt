@@ -1,3 +1,4 @@
+gradio
 Flask
 Flask-Cors
 torch
