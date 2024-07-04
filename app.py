@@ -2,6 +2,15 @@ import gradio as gr
 from PIL import Image
 from image_captioning import caption_image_unconditional, caption_image_conditional
 
+import logging
+import streamlit as st
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG, filename="app.log")
+
+try:
+    st.title("Image Captioning Application")
+
 # Gradio interface for unconditional image captioning
 def gradio_unconditional_image_caption(image):
     return caption_image_unconditional(image)
@@ -28,3 +37,8 @@ app = gr.TabbedInterface([iface_unconditional, iface_conditional], ["Uncondition
 
 # Launch the app
 app.launch()
+
+logging.debug("App started successfully.")
+except Exception as e:
+    logging.error(f"Error occurred: {e}")
+    st.error(f"An error occurred: {e}")
