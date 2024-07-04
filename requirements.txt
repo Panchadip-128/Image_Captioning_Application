@@ -1,6 +1,7 @@
-gradio
-requests
-pillow
-transformers
+Flask
+Flask-Cors
 torch
-jupyter
+torchvision
+torchaudio
+transformers==4.*
+streamlit
