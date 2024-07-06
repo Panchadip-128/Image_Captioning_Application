@@ -4,7 +4,7 @@
 source venv/bin/activate
 
 # Change directory to where your Streamlit application script is located
-cd app.py
+cd C:\Users\User\PycharmProjects\img_caption\app.py
 
 # Run Streamlit app
 streamlit run app.py
