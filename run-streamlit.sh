@@ -4,7 +4,7 @@
 source venv/bin/activate
 
 # Change directory to where your Streamlit application script is located
-cd /home/user/repository
+cd app.py
 
 # Run Streamlit app
 streamlit run app.py
