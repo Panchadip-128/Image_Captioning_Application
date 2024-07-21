@@ -1,4 +1,4 @@
-Sentiment Analysis Chatbot with Image Captioning
+Image Captioning Application 
 Overview:
 ----------
 This project combines sentiment analysis with image captioning using the Salesforce BLIP model and Hugging Face's Transformers library. The chatbot analyzes text input sentiment and provides captions for uploaded images.
